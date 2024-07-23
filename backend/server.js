@@ -59,7 +59,7 @@ app.get("/", (request, response) => {
 });
 
 //add new item to json file
-app.post("/add/item", cookieAuth,addItem)
+app.post("/add/item", addItem)
 
 async function addItem (request, response) {
     try {
@@ -112,7 +112,7 @@ async function addItem (request, response) {
 }
 
 //** week 6, get all items from the json database*/
-app.get("/get/items", cookieAuth,getItems)
+app.get("/get/items", getItems)
 async function getItems (request, response) {
     //begin here
 
@@ -138,7 +138,7 @@ async function getItems (request, response) {
 };
 
 //** week 6, search items service */
-app.get("/get/searchitem", cookieAuth,searchItems) 
+app.get("/get/searchitem", searchItems) 
 async function searchItems (request, response) {
     //begin here
     var searchField = request.query.taskname;

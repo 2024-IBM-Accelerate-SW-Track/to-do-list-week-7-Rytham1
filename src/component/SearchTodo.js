@@ -35,7 +35,7 @@ class SearchTodo extends Component {
         tmpdata: JSON.stringify(res.data),
       });
       // uncomment to see from the browser console log what is returned 
-      console.log(this.state.tmpdata);
+      
     });
   };
   
